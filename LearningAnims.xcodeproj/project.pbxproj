@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA1243E526808E0100D63844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1243E426808E0100D63844 /* AppDelegate.swift */; };
+		EA1243E726808E0100D63844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1243E626808E0100D63844 /* SceneDelegate.swift */; };
+		EA1243E926808E0100D63844 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1243E826808E0100D63844 /* MainViewController.swift */; };
+		EA1243EC26808E0100D63844 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1243EA26808E0100D63844 /* MainViewController.storyboard */; };
+		EA1243EF26808E0100D63844 /* LearningAnims.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1243ED26808E0100D63844 /* LearningAnims.xcdatamodeld */; };
+		EA1243F126808E0100D63844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1243F026808E0100D63844 /* Assets.xcassets */; };
+		EA1243F426808E0100D63844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1243F226808E0100D63844 /* LaunchScreen.storyboard */; };
+		EA1244032680968D00D63844 /* PopOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1244022680968D00D63844 /* PopOutViewController.swift */; };
+		EA1244052680969600D63844 /* PopOutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1244042680969600D63844 /* PopOutViewController.storyboard */; };
+		EA124407268096BD00D63844 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA124406268096BD00D63844 /* RotationViewController.swift */; };
+		EA124409268096C400D63844 /* RotationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA124408268096C400D63844 /* RotationViewController.storyboard */; };
+		EA12440B268096D800D63844 /* ExpandableCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12440A268096D800D63844 /* ExpandableCardViewController.swift */; };
+		EA12440F268096FD00D63844 /* ChainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12440E268096FD00D63844 /* ChainedViewController.swift */; };
+		EA1244112680970600D63844 /* ChainedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1244102680970600D63844 /* ChainedViewController.storyboard */; };
+		EA1244142680989A00D63844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1244132680989A00D63844 /* Constants.swift */; };
+		EA1244222680D17700D63844 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1244212680D17700D63844 /* UICollectionView+Extension.swift */; };
+		EA1244242680D18000D63844 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1244232680D18000D63844 /* UICollectionViewCell+Extension.swift */; };
+		EA12442E2680E16700D63844 /* CardCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12442D2680E16700D63844 /* CardCollectionViewFlowLayout.swift */; };
+		EA1244302680E1EA00D63844 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12442F2680E1EA00D63844 /* CardCollectionViewCell.swift */; };
+		EA1244322680E2F200D63844 /* ExpandableCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1244312680E2F200D63844 /* ExpandableCardViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA1243E126808E0100D63844 /* LearningAnims.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAnims.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1243E426808E0100D63844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA1243E626808E0100D63844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA1243E826808E0100D63844 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EA1243EB26808E0100D63844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		EA1243EE26808E0100D63844 /* LearningAnims.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearningAnims.xcdatamodel; sourceTree = "<group>"; };
+		EA1243F026808E0100D63844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA1243F326808E0100D63844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA1243F526808E0100D63844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1244022680968D00D63844 /* PopOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOutViewController.swift; sourceTree = "<group>"; };
+		EA1244042680969600D63844 /* PopOutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopOutViewController.storyboard; sourceTree = "<group>"; };
+		EA124406268096BD00D63844 /* RotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		EA124408268096C400D63844 /* RotationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RotationViewController.storyboard; sourceTree = "<group>"; };
+		EA12440A268096D800D63844 /* ExpandableCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCardViewController.swift; sourceTree = "<group>"; };
+		EA12440E268096FD00D63844 /* ChainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedViewController.swift; sourceTree = "<group>"; };
+		EA1244102680970600D63844 /* ChainedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChainedViewController.storyboard; sourceTree = "<group>"; };
+		EA1244132680989A00D63844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA1244212680D17700D63844 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		EA1244232680D18000D63844 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		EA12442D2680E16700D63844 /* CardCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		EA12442F2680E1EA00D63844 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA1244312680E2F200D63844 /* ExpandableCardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpandableCardViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA1243DE26808E0100D63844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA1243D826808E0100D63844 = {
+			isa = PBXGroup;
+			children = (
+				EA1243E326808E0100D63844 /* LearningAnims */,
+				EA1243E226808E0100D63844 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA1243E226808E0100D63844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA1243E126808E0100D63844 /* LearningAnims.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA1243E326808E0100D63844 /* LearningAnims */ = {
+			isa = PBXGroup;
+			children = (
+				EA12441F2680D13E00D63844 /* Infrastructure */,
+				EA1243FB268095BB00D63844 /* Presentation */,
+				EA1243E426808E0100D63844 /* AppDelegate.swift */,
+				EA1243E626808E0100D63844 /* SceneDelegate.swift */,
+				EA1243F026808E0100D63844 /* Assets.xcassets */,
+				EA1243F226808E0100D63844 /* LaunchScreen.storyboard */,
+				EA1243F526808E0100D63844 /* Info.plist */,
+				EA1243ED26808E0100D63844 /* LearningAnims.xcdatamodeld */,
+			);
+			path = LearningAnims;
+			sourceTree = "<group>";
+		};
+		EA1243FB268095BB00D63844 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EA1243FC268095C100D63844 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EA1243FC268095C100D63844 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA1243FD268095C600D63844 /* MainScene */,
+				EA1243FE2680966200D63844 /* PopOutScene */,
+				EA1243FF2680966B00D63844 /* RotationScene */,
+				EA1244002680967100D63844 /* ExpandableCardScene */,
+				EA1244012680967900D63844 /* ChainedScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA1243FD268095C600D63844 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA1243E826808E0100D63844 /* MainViewController.swift */,
+				EA1243EA26808E0100D63844 /* MainViewController.storyboard */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		EA1243FE2680966200D63844 /* PopOutScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244022680968D00D63844 /* PopOutViewController.swift */,
+				EA1244042680969600D63844 /* PopOutViewController.storyboard */,
+			);
+			path = PopOutScene;
+			sourceTree = "<group>";
+		};
+		EA1243FF2680966B00D63844 /* RotationScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA124406268096BD00D63844 /* RotationViewController.swift */,
+				EA124408268096C400D63844 /* RotationViewController.storyboard */,
+			);
+			path = RotationScene;
+			sourceTree = "<group>";
+		};
+		EA1244002680967100D63844 /* ExpandableCardScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244162680C8E300D63844 /* CardCell */,
+				EA1244152680C8D500D63844 /* View */,
+			);
+			path = ExpandableCardScene;
+			sourceTree = "<group>";
+		};
+		EA1244012680967900D63844 /* ChainedScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA12440E268096FD00D63844 /* ChainedViewController.swift */,
+				EA1244102680970600D63844 /* ChainedViewController.storyboard */,
+			);
+			path = ChainedScene;
+			sourceTree = "<group>";
+		};
+		EA1244122680988E00D63844 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244132680989A00D63844 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA1244152680C8D500D63844 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244312680E2F200D63844 /* ExpandableCardViewController.storyboard */,
+				EA12440A268096D800D63844 /* ExpandableCardViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA1244162680C8E300D63844 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA12442D2680E16700D63844 /* CardCollectionViewFlowLayout.swift */,
+				EA12442F2680E1EA00D63844 /* CardCollectionViewCell.swift */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		EA12441F2680D13E00D63844 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244202680D14700D63844 /* Extensions */,
+				EA1244122680988E00D63844 /* Helpers */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		EA1244202680D14700D63844 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA1244212680D17700D63844 /* UICollectionView+Extension.swift */,
+				EA1244232680D18000D63844 /* UICollectionViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA1243E026808E0100D63844 /* LearningAnims */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1243F826808E0100D63844 /* Build configuration list for PBXNativeTarget "LearningAnims" */;
+			buildPhases = (
+				EA1243DD26808E0100D63844 /* Sources */,
+				EA1243DE26808E0100D63844 /* Frameworks */,
+				EA1243DF26808E0100D63844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningAnims;
+			productName = LearningAnims;
+			productReference = EA1243E126808E0100D63844 /* LearningAnims.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA1243D926808E0100D63844 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EA1243E026808E0100D63844 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EA1243DC26808E0100D63844 /* Build configuration list for PBXProject "LearningAnims" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA1243D826808E0100D63844;
+			productRefGroup = EA1243E226808E0100D63844 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA1243E026808E0100D63844 /* LearningAnims */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA1243DF26808E0100D63844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1244322680E2F200D63844 /* ExpandableCardViewController.storyboard in Resources */,
+				EA1244052680969600D63844 /* PopOutViewController.storyboard in Resources */,
+				EA124409268096C400D63844 /* RotationViewController.storyboard in Resources */,
+				EA1243F426808E0100D63844 /* LaunchScreen.storyboard in Resources */,
+				EA1243F126808E0100D63844 /* Assets.xcassets in Resources */,
+				EA1243EC26808E0100D63844 /* MainViewController.storyboard in Resources */,
+				EA1244112680970600D63844 /* ChainedViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA1243DD26808E0100D63844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1244222680D17700D63844 /* UICollectionView+Extension.swift in Sources */,
+				EA1244242680D18000D63844 /* UICollectionViewCell+Extension.swift in Sources */,
+				EA1243E926808E0100D63844 /* MainViewController.swift in Sources */,
+				EA12440F268096FD00D63844 /* ChainedViewController.swift in Sources */,
+				EA12442E2680E16700D63844 /* CardCollectionViewFlowLayout.swift in Sources */,
+				EA1243E526808E0100D63844 /* AppDelegate.swift in Sources */,
+				EA1243EF26808E0100D63844 /* LearningAnims.xcdatamodeld in Sources */,
+				EA1244302680E1EA00D63844 /* CardCollectionViewCell.swift in Sources */,
+				EA1244032680968D00D63844 /* PopOutViewController.swift in Sources */,
+				EA12440B268096D800D63844 /* ExpandableCardViewController.swift in Sources */,
+				EA124407268096BD00D63844 /* RotationViewController.swift in Sources */,
+				EA1243E726808E0100D63844 /* SceneDelegate.swift in Sources */,
+				EA1244142680989A00D63844 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA1243EA26808E0100D63844 /* MainViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1243EB26808E0100D63844 /* Base */,
+			);
+			name = MainViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		EA1243F226808E0100D63844 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1243F326808E0100D63844 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA1243F626808E0100D63844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA1243F726808E0100D63844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA1243F926808E0100D63844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearningAnims/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GiorgiMeskhi.LearningAnims;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA1243FA26808E0100D63844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearningAnims/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GiorgiMeskhi.LearningAnims;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA1243DC26808E0100D63844 /* Build configuration list for PBXProject "LearningAnims" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1243F626808E0100D63844 /* Debug */,
+				EA1243F726808E0100D63844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1243F826808E0100D63844 /* Build configuration list for PBXNativeTarget "LearningAnims" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1243F926808E0100D63844 /* Debug */,
+				EA1243FA26808E0100D63844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA1243ED26808E0100D63844 /* LearningAnims.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA1243EE26808E0100D63844 /* LearningAnims.xcdatamodel */,
+			);
+			currentVersion = EA1243EE26808E0100D63844 /* LearningAnims.xcdatamodel */;
+			path = LearningAnims.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA1243D926808E0100D63844 /* Project object */;
+}

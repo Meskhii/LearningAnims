@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rotation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RotationViewController" id="Y6W-OH-hqX" customClass="RotationViewController" customModule="LearningAnims" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXx-24-3BY">
+                                <rect key="frame" x="20" y="194" width="216" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="debit_card" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WCy-BM-3Gy">
+                                <rect key="frame" x="20" y="272.5" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="xby-VE-Lpx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbE-VX-TQB">
+                                <rect key="frame" x="20" y="712.5" width="374" height="52"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="vkT-du-a5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateCard:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N6k-pI-CeA"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JZ0-Mb-Ng3">
+                                <rect key="frame" x="-60" y="84" width="200" height="772"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaE-9i-OSk">
+                                        <rect key="frame" x="72.5" y="0.0" width="55" height="257.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" systemColor="systemGreenColor"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-Aa-Xml">
+                                        <rect key="frame" x="8.5" y="257.5" width="183" height="257"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Include Cashtag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ne-nv-7ia">
+                                                <rect key="frame" x="0.0" y="118.5" width="124" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-Ba-fkg">
+                                                <rect key="frame" x="134" y="113" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7k-2w-cDW">
+                                        <rect key="frame" x="81" y="514.5" width="38" height="257.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" systemColor="systemGreenColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8Xl-Vk-rrq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zbE-VX-TQB" firstAttribute="top" secondItem="WCy-BM-3Gy" secondAttribute="bottom" constant="220" id="5kg-eA-byx"/>
+                            <constraint firstItem="JZ0-Mb-Ng3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="-60" id="8A7-eo-zew"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zbE-VX-TQB" secondAttribute="trailing" constant="20" id="8BU-15-Akz"/>
+                            <constraint firstItem="WCy-BM-3Gy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Cy8-CP-Uis"/>
+                            <constraint firstItem="WCy-BM-3Gy" firstAttribute="top" secondItem="KXx-24-3BY" secondAttribute="bottom" constant="28" id="F1u-ie-ZFP"/>
+                            <constraint firstItem="KXx-24-3BY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="JNm-lb-ItR"/>
+                            <constraint firstAttribute="bottom" secondItem="JZ0-Mb-Ng3" secondAttribute="bottom" constant="40" id="Me3-Zc-c8N"/>
+                            <constraint firstItem="KXx-24-3BY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="QmZ-Nt-3eq"/>
+                            <constraint firstItem="JZ0-Mb-Ng3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="bUA-pD-cKa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KXx-24-3BY" secondAttribute="trailing" constant="178" id="brO-db-Daw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WCy-BM-3Gy" secondAttribute="trailing" constant="20" id="cPP-OV-0iz"/>
+                            <constraint firstItem="zbE-VX-TQB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="khY-Yc-ywt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="PaE-9i-OSk" id="fe5-rK-SoC"/>
+                        <outlet property="cashTagSwitch" destination="8sA-Ba-fkg" id="qLB-pI-oAi"/>
+                        <outlet property="continueButton" destination="zbE-VX-TQB" id="Lap-5e-LGV"/>
+                        <outlet property="imageView" destination="WCy-BM-3Gy" id="ewj-AA-Ae8"/>
+                        <outlet property="includeCashTagLabel" destination="8ne-nv-7ia" id="pQ9-UG-Cw4"/>
+                        <outlet property="nextButton" destination="v7k-2w-cDW" id="oaB-Ka-mtU"/>
+                        <outlet property="pickAColorLabel" destination="KXx-24-3BY" id="G1Y-Dm-PaX"/>
+                        <outlet property="stackView" destination="JZ0-Mb-Ng3" id="a2o-Wa-oxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="debit_card" width="519" height="327"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
