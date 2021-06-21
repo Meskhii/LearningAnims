@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VgR-y9-SJy">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VgR-y9-SJy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lBr-T2-Zwy">
@@ -33,9 +33,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bali" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-uT-DNs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="350"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="350" id="6yJ-NG-WgJ"/>
+                                                        <constraint firstAttribute="height" constant="380" id="6yJ-NG-WgJ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bali" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-4O-B2V">
@@ -75,7 +75,7 @@
                                             <constraint firstItem="Ljh-uT-DNs" firstAttribute="leading" secondItem="QQF-6V-gFY" secondAttribute="leading" id="Fdj-yu-70e"/>
                                             <constraint firstItem="Amq-4O-B2V" firstAttribute="centerX" secondItem="Ljh-uT-DNs" secondAttribute="centerX" id="Uyt-y2-uSs"/>
                                             <constraint firstItem="Ljh-uT-DNs" firstAttribute="top" secondItem="QQF-6V-gFY" secondAttribute="top" id="ZxI-b0-ruu"/>
-                                            <constraint firstItem="Jp7-MW-e2K" firstAttribute="top" secondItem="Ljh-uT-DNs" secondAttribute="bottom" constant="25" id="cZD-yz-Qbb"/>
+                                            <constraint firstItem="Jp7-MW-e2K" firstAttribute="top" secondItem="Ljh-uT-DNs" secondAttribute="bottom" constant="-5" id="cZD-yz-Qbb"/>
                                             <constraint firstAttribute="trailing" secondItem="Ljh-uT-DNs" secondAttribute="trailing" id="nXh-sy-HlN"/>
                                             <constraint firstItem="Jp7-MW-e2K" firstAttribute="centerX" secondItem="QQF-6V-gFY" secondAttribute="centerX" id="oVH-v0-rdT"/>
                                             <constraint firstItem="Amq-4O-B2V" firstAttribute="top" secondItem="QQF-6V-gFY" secondAttribute="top" constant="20" id="qrn-Jf-SZh"/>

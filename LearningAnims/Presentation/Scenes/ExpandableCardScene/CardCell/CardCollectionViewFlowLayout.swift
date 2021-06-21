@@ -25,6 +25,7 @@ class CardCollectionViewFlowLayout: UICollectionViewFlowLayout {
         self.itemSize = itemSize
         minimumLineSpacing = lineSpacing
         scrollDirection = .horizontal
+        
     }
     
     func setItemSize(itemSize: CGSize) {
@@ -123,7 +124,7 @@ class CardCollectionViewFlowLayout: UICollectionViewFlowLayout {
             return
         }
         
-        let inset = collectionView.bounds.size.width / 2 - itemSize.width / 2
+        let inset = collectionView.bounds.size.width / 3 - itemSize.width / 3
         collectionView.contentInset = UIEdgeInsets.init(top: 0, left: inset, bottom: 0, right: inset)
         collectionView.contentOffset = CGPoint(x: -inset, y: 0)
     }

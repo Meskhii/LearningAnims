@@ -25,26 +25,47 @@ class RotationViewController: UIViewController {
         setupStackViewItems()
     }
     
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        
+        coordinator.animate(alongsideTransition: { [unowned self] _ in
+                self.continueButton.alpha = 0
+            self.pickAColorLabel.alpha = 0
+            self.setupStackViewItems()
+            self.showStackViewItems()
+        }) { [unowned self] _ in
+            self.view.backgroundColor = UIColor.white
+        }
+        
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .landscapeLeft }
+
+    
     @IBAction func animateCard(_ sender: Any) {
         
-        UIView.animate(withDuration: 2) {
-            self.imageView.transform = CGAffineTransform(rotationAngle: .pi / 2)
-            
+        UIView.animate(withDuration: 1) {
+            UIView.setAnimationsEnabled(true)
+            UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
             self.continueButton.alpha = 0
             self.pickAColorLabel.alpha = 0
-          
+            self.setupStackViewItems()
             self.showStackViewItems()
         }
+        
         
     }
     
     private func setupStackViewItems() {
         stackView.arrangedSubviews.forEach({$0.alpha = 0})
-        stackView.arrangedSubviews.forEach({$0.transform = CGAffineTransform(rotationAngle: .pi / 2)})
+        stackView.arrangedSubviews.forEach({$0.transform = CGAffineTransform(rotationAngle: .pi)})
+        stackView.transform = CGAffineTransform(scaleX: -1, y: 1)
+
     }
     
     private func showStackViewItems() {
         stackView.arrangedSubviews.forEach({$0.alpha = 1})
+        stackView.arrangedSubviews.forEach({$0.transform = CGAffineTransform(scaleX: -1, y: 1) })
     }
     
 }

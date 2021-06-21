@@ -30,7 +30,7 @@ class CardCollectionViewCell:UICollectionViewCell, UIGestureRecognizerDelegate {
     private var initialFrame: CGRect?
     private var state: State = .collapsed
     
-    static let cellSize = CGSize(width: 250, height: 350)
+    static let cellSize = CGSize(width: 250, height: 380)
     
     // MARK: - Computed Variables
     private lazy var panRecognizer: UIPanGestureRecognizer = {

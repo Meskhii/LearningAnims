@@ -26,7 +26,7 @@ class ExpandableCardViewController: UIViewController {
 extension ExpandableCardViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
