@@ -28,8 +28,17 @@ class PopOutViewController: UIViewController {
             options: .curveEaseOut, animations: {
                 self.popOutButton.alpha = 0
                 self.popOutButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        }, completion: nil)
+            }, completion: {(finished:Bool) in
+                self.returnImageToOriginalSize()
+              })
         
+    }
+    
+    private func returnImageToOriginalSize() {
+        UIView.animate(withDuration: 0.1) {
+            self.popOutButton.alpha = 1
+            self.popOutButton.transform = .identity
+        }
     }
     
 }
